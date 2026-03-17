@@ -1,7 +1,8 @@
 import { Link } from "react-router-dom";
 import { useState } from "react";
 import { useEffect } from "react";
-import {api} from '../serviece/api'
+import {api} from '../serviece/api';
+import image1 from "../assets/image1.png";
 
 function Home() {
 
@@ -23,7 +24,7 @@ const [solutions, setSolutions] = useState([]);
 
       <div className="relative min-h-screen">
         <img
-          src="/src/assets/image1.png"
+          src={image1}
           alt="Hero"
           className="absolute inset-0 w-full h-full object-cover"
         />
